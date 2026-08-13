@@ -14,7 +14,7 @@
   --paper:#faf8f4;
   --white:#fff;
   --ink:#132031;
-  --muted:#687588;
+  --muted:#505b69;
   --muted-dark:#c4ced8;
   --accent:#f2673a;
   --accent-2:#ff8965;
@@ -22,7 +22,7 @@
   --line-dark:rgba(255,255,255,.13);
   --shadow:0 24px 70px rgba(8,27,46,.10);
   --radius:18px;
-  --container:1720px;
+  --container:clamp(1720px, calc(100% - 200px), 1880px);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:92px}
@@ -410,7 +410,7 @@ footer{
   gap:28px;flex-wrap:wrap;
 }
 .industry-label{
-  color:#8493a3;
+  color:#95a3b1;
   font-size:10px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;
 }
 .industry-items{display:flex;gap:28px;flex-wrap:wrap}
@@ -449,7 +449,7 @@ footer{
   max-width:610px;
   justify-self:end;
   margin:0;
-  color:#687588;
+  color:#505b69;
   font-size:16px;
   line-height:1.68;
 }
@@ -475,19 +475,21 @@ footer{
   width:52px;height:52px;
   display:grid;place-items:center;
   margin-bottom:22px;
-  border:1px solid #dce2e8;
+  border:1px solid #e6eaee;
   border-radius:14px;
-  background:#f4f6f8;
+  background:transparent;
   color:var(--navy);
   font-size:20px;
 }
+.solution-card .solution-icon::before,.solution-card .solution-icon::after{content:none!important;display:none!important}
+.solution-icon svg{width:26px;height:26px}
 .solution-card h3{
   margin:0 0 10px;
   color:var(--navy);
   font-family:"Charter","Iowan Old Style","Baskerville","Georgia","Times New Roman",serif;
   font-size:25px;font-weight:500;
 }
-.solution-card p{margin:0;max-width:360px;color:#667487;font-size:14px;line-height:1.6}
+.solution-card p{margin:0;max-width:360px;color:#4c5765;font-size:14px;line-height:1.6}
 .context-link{
   display:inline-flex;align-items:center;gap:8px;
   margin-top:20px;
@@ -538,7 +540,7 @@ footer{
 }
 .talent-card p{
   margin:0;
-  color:#667487;
+  color:#4c5765;
   font-size:14px;
   line-height:1.62;
 }
@@ -551,10 +553,10 @@ footer{
 }
 .talent-proof span{
   padding:8px 10px;
-  border:1px solid #e0e5ea;
+  border:1px solid #d3dae1;
   border-radius:999px;
   background:#fff;
-  color:#5e6a78;
+  color:#3f4b59;
   font-size:10px;
   font-weight:700;
   letter-spacing:.025em;
@@ -648,7 +650,7 @@ footer{
 }
 .gov-card p{
   margin:0;
-  color:#667487;
+  color:#4c5765;
   font-size:13px;
   line-height:1.58;
 }
@@ -762,7 +764,7 @@ footer{
   margin:0;
   max-width:620px;
   justify-self:end;
-  color:#687588;
+  color:#505b69;
   font-size:15px;
   line-height:1.65;
 }
@@ -800,7 +802,7 @@ footer{
   line-height:1.4;
 }
 .comparison thead th{
-  color:#5d6878;
+  color:#4a5563;
   background:#f8f8f6;
   font-size:11px;
   letter-spacing:.05em;
@@ -857,7 +859,7 @@ footer{
   font-family:"Charter","Iowan Old Style","Baskerville","Georgia","Times New Roman",serif;
   font-size:24px;font-weight:500;
 }
-.reason p{margin:0;color:#687588;font-size:14px;line-height:1.62}
+.reason p{margin:0;color:#505b69;font-size:14px;line-height:1.62}
 
 .final-cta{
   position:relative;
@@ -2746,7 +2748,7 @@ body.reveal-ready .reveal-item.is-visible{
     max-width:none;
     min-height:0;
     margin:0;
-    color:#667487;
+    color:#4c5765;
     font-size:12.5px;
     line-height:1.58;
   }
@@ -3267,7 +3269,7 @@ body.reveal-ready .reveal-item.is-visible{
       <a href="#contact">Contact</a>
     </nav>
 
-    <a class="nav-cta" href="mailto:info@arossolutions.com">Talk to an Expert <span>→</span></a>
+    <a class="nav-cta" href="mailto:info@arossolutions.com">Talk to an Expert <span><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-.1em" aria-hidden="true"><path d="M4.5 12h13M12 6.5 18 12l-6 5.5"/></svg></span></a>
 
     <button class="mobile-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primaryNav">
       <span></span>
@@ -3288,13 +3290,13 @@ body.reveal-ready .reveal-item.is-visible{
           <p>Building a global engineering and delivery team requires more than lower costs. Leaders demand direct ownership, tight data oversight, and operational alignment. AROS builds and operates fully dedicated, captive engineering and delivery hubs in India. You maintain 100% control over product design, team culture, and performance metrics—while we handle corporate entity formation, local compliance, tax structures, and premium office infrastructure.</p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="mailto:info@arossolutions.com">Talk to an Expert <span>→</span></a>
-            <a class="btn btn-secondary" href="#how-it-works">How AROS Works <span>↓</span></a>
+            <a class="btn btn-primary" href="mailto:info@arossolutions.com">Talk to an Expert <span><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-.1em" aria-hidden="true"><path d="M4.5 12h13M12 6.5 18 12l-6 5.5"/></svg></span></a>
+            <a class="btn btn-secondary" href="#how-it-works">How AROS Works <span><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-.2em" aria-hidden="true"><path d="M12 4.5v13M6.5 11.5 12 18l5.5-6.5"/></svg></span></a>
           </div>
 
           <div class="contact-row">
-            <div class="contact-item"><span class="contact-icon">✉</span><span>info@arossolutions.com</span></div>
-            <div class="contact-item"><span class="contact-icon">⌖</span><span>London, United Kingdom</span></div>
+            <div class="contact-item"><span class="contact-icon"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M4 7l8 5.5L20 7"/></svg></span><span>info@arossolutions.com</span></div>
+            <div class="contact-item"><span class="contact-icon"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c4-4 7-7.2 7-10.8A7 7 0 0 0 5 10.2C5 13.8 8 17 12 21z"/><circle cx="12" cy="10.2" r="2.3"/></svg></span><span>London, United Kingdom</span></div>
           </div>
         </div>
 
@@ -3308,7 +3310,7 @@ body.reveal-ready .reveal-item.is-visible{
             <h3>Build in India.<br>Operate with Confidence.</h3>
           </div>
           <p>Your team, your brand and your capability — supported by AROS infrastructure, governance and operating expertise.</p>
-          <a href="#solutions">Explore the AROS Model <span>→</span></a>
+          <a href="#solutions">Explore the AROS Model <span><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-.1em" aria-hidden="true"><path d="M4.5 12h13M12 6.5 18 12l-6 5.5"/></svg></span></a>
         </aside>
 
         <div class="stats" aria-label="AROS proof points">
@@ -3358,26 +3360,26 @@ body.reveal-ready .reveal-item.is-visible{
 
       <div class="solution-grid">
         <article class="solution-card">
-          <div class="solution-icon">▦</div>
+          <div class="solution-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="4.5" width="15" height="15" rx="1.5"/><path d="M12 4.5v15"/><path d="M4.5 12h15"/></svg></div>
           <h3>Establish</h3>
           <p>Entity setup, workspace, infrastructure, employment operations and local support — handled end to end.</p>
-          <a class="context-link" href="#contact">Explore Setup <span>→</span></a>
+          <a class="context-link" href="#contact">Explore Setup <span><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-.1em" aria-hidden="true"><path d="M4.5 12h13M12 6.5 18 12l-6 5.5"/></svg></span></a>
           <div class="card-number">01</div>
         </article>
 
         <article class="solution-card">
-          <div class="solution-icon">♙</div>
+          <div class="solution-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.4" r="3.3"/><path d="M5.6 19.4c0-3.5 2.9-5.9 6.4-5.9s6.4 2.4 6.4 5.9"/></svg></div>
           <h3>Build</h3>
           <p>Recruit and onboard engineering, AI, data and consulting teams designed around your capability requirements.</p>
-          <a class="context-link" href="#contact">Build Your Team <span>→</span></a>
+          <a class="context-link" href="#contact">Build Your Team <span><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-.1em" aria-hidden="true"><path d="M4.5 12h13M12 6.5 18 12l-6 5.5"/></svg></span></a>
           <div class="card-number">02</div>
         </article>
 
         <article class="solution-card">
-          <div class="solution-icon">✓</div>
+          <div class="solution-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.8 12.4l4.7 4.7L19.2 7"/></svg></div>
           <h3>Operate</h3>
           <p>Governance, compliance and operating support designed for secure, accountable and scalable delivery.</p>
-          <a class="context-link" href="#contact">Discuss Operations <span>→</span></a>
+          <a class="context-link" href="#contact">Discuss Operations <span><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-.1em" aria-hidden="true"><path d="M4.5 12h13M12 6.5 18 12l-6 5.5"/></svg></span></a>
           <div class="card-number">03</div>
         </article>
       </div>
@@ -3600,7 +3602,7 @@ body.reveal-ready .reveal-item.is-visible{
       </div>
 
       <div class="final-actions">
-        <a class="btn btn-primary" href="mailto:info@arossolutions.com">Talk to an Expert <span>→</span></a>
+        <a class="btn btn-primary" href="mailto:info@arossolutions.com">Talk to an Expert <span><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-.1em" aria-hidden="true"><path d="M4.5 12h13M12 6.5 18 12l-6 5.5"/></svg></span></a>
         <div class="final-contact">
           <span>info@arossolutions.com</span>
           <span>London, United Kingdom</span>
@@ -3835,7 +3837,7 @@ createWave(document.getElementById('cta-wave'),'cta');
   --line-dark:rgba(255,255,255,.12);
   --card-radius:18px;
   --button-radius:10px;
-  --container:1600px;
+  --container:clamp(1720px, calc(100% - 200px), 1880px);
   --ease:220ms cubic-bezier(.2,.7,.2,1);
 }
 *{box-sizing:border-box}
@@ -4272,7 +4274,7 @@ footer{background:#04111d;color:#8b98a5;border-top:1px solid rgba(255,255,255,.0
       <a href="mailto:info@arossolutions.com">Contact</a>
     </nav>
 
-    <a class="nav-cta" href="mailto:info@arossolutions.com">Talk to an Expert <span>→</span></a>
+    <a class="nav-cta" href="mailto:info@arossolutions.com">Talk to an Expert <span><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-.1em" aria-hidden="true"><path d="M4.5 12h13M12 6.5 18 12l-6 5.5"/></svg></span></a>
 
     <button class="mobile-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primaryNav">
       <span></span>
@@ -4445,7 +4447,7 @@ footer{background:#04111d;color:#8b98a5;border-top:1px solid rgba(255,255,255,.0
         <p>Tell us what you want to build. AROS will help define the team, operating model, infrastructure and path to launch.</p>
       </div>
       <div class="final-actions">
-        <a class="btn" href="mailto:info@arossolutions.com">Talk to an Expert <span>→</span></a>
+        <a class="btn" href="mailto:info@arossolutions.com">Talk to an Expert <span><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-.1em" aria-hidden="true"><path d="M4.5 12h13M12 6.5 18 12l-6 5.5"/></svg></span></a>
         <div class="final-contact"><span>info@arossolutions.com</span><span>London, United Kingdom</span></div>
       </div>
     </div>
@@ -4597,7 +4599,7 @@ footer{background:#04111d;color:#8b98a5;border-top:1px solid rgba(255,255,255,.0
         <p>Tell us what you want to build. AROS will help define the team, operating model, infrastructure and path to launch.</p>
       </div>
       <div class="final-actions">
-        <a class="btn" href="mailto:info@arossolutions.com">Talk to an Expert <span>→</span></a>
+        <a class="btn" href="mailto:info@arossolutions.com">Talk to an Expert <span><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-.1em" aria-hidden="true"><path d="M4.5 12h13M12 6.5 18 12l-6 5.5"/></svg></span></a>
         <div class="final-contact"><span>info@arossolutions.com</span><span>London, United Kingdom</span></div>
       </div>
     </div>
